@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.first.cucumber.bdd'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    //testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '6.10.4'
+    implementation 'junit:junit:4.12'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.10.4'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.20.1'
+}
+
+test {
+    //useJUnitPlatform()
+}
